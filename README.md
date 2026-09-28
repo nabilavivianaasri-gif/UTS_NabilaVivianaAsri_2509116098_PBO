@@ -1,11 +1,13 @@
 # 🏋️ Sistem Data Tempat Gym
 
 ## 📌 Deskripsi Program
-Sistem Data Tempat Gym adalah program berbasis Java yang digunakan untuk mengelola data member gym. Program ini membantu pengguna dalam menambahkan, menampilkan, mencari, mengubah, dan menghapus data member.
+Program Sistem Data Tempat Gym adalah program berbasis Java yang digunakan untuk mengelola data member gym. Program ini menyediakan beberapa fitur utama seperti menambah member, menampilkan data member, mencari member, mengupdate data member, menghapus member, mengurutkan data berdasarkan nama, serta menampilkan ringkasan data gym.
 
-Program memiliki dua jenis membership, yaitu Standar dan Premium, serta dua pilihan paket gym yaitu Bulanan dan Tahunan. Program juga menampilkan biaya membership, tanggal pendaftaran, tanggal berakhir, dan status keaktifan member.
+Setiap member memiliki data seperti ID member, nama, usia, jenis member, paket gym, biaya, tanggal daftar, tanggal berakhir, dan status keanggotaan. Jenis member dibagi menjadi Membership Standar dan Membership Premium, sedangkan paket gym terdiri dari Bulanan dan Tahunan.
 
-Program dibuat menggunakan konsep Pemrograman Berorientasi Objek (PBO), seperti encapsulation, inheritance, polymorphism, method overriding, enum, validasi input, dan ArrayList.
+Program ini juga menerapkan konsep Pemrograman Berorientasi Objek (PBO) seperti encapsulation, inheritance, polymorphism, access modifier, constructor, method overriding, enum, validasi input, dan ArrayList. Polymorphism diterapkan melalui class MemberReguler dan MemberPremium yang melakukan method overriding terhadap method seperti getJenisMember(), getFasilitas(), dan getBiaya().
+
+Secara keseluruhan, program dibuat untuk membantu proses pengelolaan data member gym secara lebih terstruktur, sehingga data dapat ditambah, dicari, diperbarui, dihapus, dan ditampilkan dengan lebih mudah melalui menu.
 
 ## 1.Penjelasan Class & Atribut
 
