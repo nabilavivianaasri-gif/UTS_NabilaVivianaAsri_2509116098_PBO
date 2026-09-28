@@ -115,7 +115,7 @@ Selanjutnya, pengguna memilih paket gym Bulanan dengan biaya Rp350.000. Setelah 
 
 Program melakukan validasi pada nama dan usia. Nama harus berupa huruf, sedangkan usia harus berada di antara 15–100 tahun. Jika input tidak sesuai, program akan menolak dan meminta pengguna memasukkan data kembali.
 
-### 2. Menampilkan Semu Member
+### 2. Menampilkan Semua Member
 
 <img width="213" height="361" alt="image" src="https://github.com/user-attachments/assets/378f784b-b9e5-4def-8db0-6a89766352d3" />
 
