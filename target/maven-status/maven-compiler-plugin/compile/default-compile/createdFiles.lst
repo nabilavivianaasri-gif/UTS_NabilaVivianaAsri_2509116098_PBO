@@ -1,0 +1,7 @@
+model\MemberReguler.class
+model\MemberPremium.class
+model\Menu.class
+model\PaketGym.class
+model\DataGym.class
+main\Main.class
+model\Member.class
