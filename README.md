@@ -1,13 +1,11 @@
 # 🏋️ Sistem Data Tempat Gym
 
 ## 📌 Deskripsi Program
-Program Sistem Data Tempat Gym adalah program berbasis Java yang digunakan untuk mengelola data member gym. Program ini menyediakan beberapa fitur utama seperti menambah member, menampilkan data member, mencari member, mengupdate data member, menghapus member, mengurutkan data berdasarkan nama, serta menampilkan ringkasan data gym.
+Sistem Data Tempat Gym adalah program berbasis Java yang digunakan untuk mengelola data member gym. Program ini membantu pengguna dalam menambahkan, menampilkan, mencari, mengubah, dan menghapus data member.
 
-Setiap member memiliki data seperti ID member, nama, usia, jenis member, paket gym, biaya, tanggal daftar, tanggal berakhir, dan status keanggotaan. Jenis member dibagi menjadi Membership Standar dan Membership Premium, sedangkan paket gym terdiri dari Bulanan dan Tahunan.
+Program memiliki dua jenis membership, yaitu Standar dan Premium, serta dua pilihan paket gym yaitu Bulanan dan Tahunan. Program juga menampilkan biaya membership, tanggal pendaftaran, tanggal berakhir, dan status keaktifan member.
 
-Program ini juga menerapkan konsep Pemrograman Berorientasi Objek (PBO) seperti encapsulation, inheritance, polymorphism, access modifier, constructor, method overriding, enum, validasi input, dan ArrayList. Polymorphism diterapkan melalui class MemberReguler dan MemberPremium yang melakukan method overriding terhadap method seperti getJenisMember(), getFasilitas(), dan getBiaya().
-
-Secara keseluruhan, program dibuat untuk membantu proses pengelolaan data member gym secara lebih terstruktur, sehingga data dapat ditambah, dicari, diperbarui, dihapus, dan ditampilkan dengan lebih mudah melalui menu.
+Program dibuat menggunakan konsep Pemrograman Berorientasi Objek (PBO), seperti encapsulation, inheritance, polymorphism, method overriding, enum, validasi input, dan ArrayList.
 
 ## 1.Penjelasan Class & Atribut
 
@@ -71,22 +69,27 @@ Perulangan akan berhenti ketika pengguna memilih menu Keluar.
 Class PaketGym digunakan untuk mengatur informasi yang berkaitan dengan paket gym.
 Class ini membantu program dalam membedakan pilihan paket yang tersedia, seperti Bulanan dan Tahunan.
 Dengan adanya class ini, pengelolaan informasi paket menjadi lebih terpisah dari data member sehingga struktur program lebih rapi dan mudah dipahami.
-
-## 3.Encapsulation dan Inheritance
+## 3. Penerapan Elemen wajib
+### 1. Inheritance
 
 
 <img width="505" height="142" alt="image" src="https://github.com/user-attachments/assets/877ddfd6-4e46-4128-85be-569c38fdfd03" />
 
+### 2. Polymorphism
+
+<img width="485" height="261" alt="image" src="https://github.com/user-attachments/assets/abeee77e-66a4-4594-9f46-93cbc340900c" />
 
 
-Pada class Member, encapsulation diterapkan dengan menggunakan access modifier private pada atribut seperti nama, usia, paket, dan biaya. Data tersebut tidak dapat diakses secara langsung dari luar class, sehingga untuk mengambil atau mengubah datanya digunakan getter dan setter. Setter juga digunakan untuk melakukan validasi agar data yang dimasukkan sesuai dengan aturan program. Dengan begitu, data member menjadi lebih aman dan terkontrol.
+### 3. Condition
+
+<img width="544" height="247" alt="image" src="https://github.com/user-attachments/assets/b6b7714d-70cc-4dec-9131-0244723f916a" />
 
 
-<img width="305" height="98" alt="image" src="https://github.com/user-attachments/assets/e961ae99-3091-4dbd-b64e-cb747432d291" />
+### 4. Looping
 
 
+<img width="472" height="113" alt="image" src="https://github.com/user-attachments/assets/391ecc47-1754-457a-a6e3-c3dec8beb560" />
 
-Pada class PaketGym, encapsulation digunakan untuk mengatur data yang berkaitan dengan paket gym agar tidak dapat diubah secara langsung dari luar class. Informasi seperti nama paket dan biaya dikelola melalui method yang tersedia di dalam class. Dengan cara ini, pengelolaan paket Bulanan dan Tahunan menjadi lebih teratur dan data yang digunakan oleh program dapat dikontrol dengan baik.
 
 # 4. Alur Program
 
@@ -176,22 +179,11 @@ Penjelasan Validasi Menu
 
 Pada proses ini, pengguna memasukkan pilihan menu 8, sedangkan menu yang tersedia hanya dari 1–7. Program menolak input tersebut dan menampilkan pesan bahwa nilai harus berada di antara 1 dan 7, kemudian pengguna diminta memasukkan pilihan yang benar.
 
-# 5.Nilai Tambah
-
-1. Polymorphism
-
-Polymorphism diterapkan menggunakan method overriding pada class MemberReguler dan MemberPremium. Kedua class tersebut memiliki method yang berasal dari class Member dan dapat memberikan perilaku yang berbeda sesuai jenis membership. Dengan demikian, program dapat menangani member Reguler dan Premium dengan cara yang berbeda meskipun berasal dari class induk yang sama.
-
-2. Access Modifier
-
-Program menerapkan beberapa access modifier seperti private dan public. Access modifier private digunakan untuk membatasi akses terhadap atribut tertentu, sedangkan public digunakan pada class atau method yang perlu diakses dari class lain. Penggunaan access modifier membantu mengatur hak akses setiap bagian program.
-
-3. Encapsulation
-
-Encapsulation diterapkan dengan menyembunyikan data tertentu di dalam class menggunakan access modifier private. Data tersebut kemudian diakses melalui getter dan setter. Selain itu, terdapat penggunaan private final pada data tertentu seperti idMember dan tanggalDaftar, sehingga nilainya tidak dapat diubah setelah ditentukan.
-
-4. Validasi Input
-
-Program menerapkan validasi input untuk mencegah pengguna memasukkan data yang tidak sesuai. Validasi diterapkan pada input seperti nama, usia, ID member, pilihan jenis membership, pilihan paket, dan pilihan menu. Jika input tidak sesuai dengan ketentuan, program akan menampilkan pesan kesalahan dan meminta pengguna memasukkan data yang benar kembali.
-
+Cara Menjalankan Program
+1. Buka project Sistem Data Tempat Gym menggunakan NetBeans.
+2. Jalankan file Main.java.
+3. Program akan menampilkan menu utama pada console.
+4. Pilih menu dengan memasukkan angka sesuai pilihan.
+5. Masukkan data sesuai petunjuk yang diberikan oleh program.
+6. Untuk keluar dari program, pilih menu 7. Keluar.
 
